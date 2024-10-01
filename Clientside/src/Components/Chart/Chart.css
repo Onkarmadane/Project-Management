@@ -1,0 +1,21 @@
+
+#myChart{
+    background-color: white !important;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    
+}
+.chart-container {
+    width: 60% !important; /* Set the chart width to 50% */
+  }
+  
+  @media (max-width: 768px) {
+    .chart-container {
+      width: 100%; /* On smaller screens, make it full width */
+    }
+    .chart-container {
+      width: 100% !important; /* Set the chart width to 50% */
+    }
+    
+  }
+  

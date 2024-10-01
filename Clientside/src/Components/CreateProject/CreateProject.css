@@ -1,0 +1,138 @@
+.form-container {
+  background-image: url('../../imgs/Header-bg.svg');
+  background-repeat: no-repeat;
+  background-size: 100% ;
+  }
+  .form-control{
+    outline: .5px solid #979797;
+  }
+  header {
+    width: 100%;
+    padding: 15px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+
+  .back-button {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 10px;
+  }
+
+  .back-button i {
+    font-size: 24px;
+  }
+
+  .header-title {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .logo-container {
+    position: absolute;
+    padding-top: 30px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .logo {
+    width: 50px;
+    height: auto;
+    
+  }
+
+  /* Center the content in the middle of the page */
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px); /* Adjust height based on header height */
+  }
+  .header {
+    width: 100%;
+    padding: 15px;
+    /* background-color: #f0f0f0; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  .dropdown-container {
+    position: relative;
+  }
+  
+  .dropdown-icon {
+    position: absolute;
+    top: 50%;
+    right: 15px; /* Adjust this value for spacing */
+    transform: translateY(-50%);
+    color: white; /* Change color based on your theme */
+    pointer-events: none; /* Prevent interaction with the icon */
+  }
+  
+  .form-control {
+    padding-right: 30px; /* Make space for the icon */
+  }
+.form1{
+  margin-right: 150px;
+}  
+.status{
+  margin-left: 67% !important;
+}
+.height{
+  height: 25% !important;
+}
+.formcard{
+  height: 100% !important;
+  outline: none !important;
+}
+.form-container{
+  overflow-x: hidden !important;
+}
+/* General styling for mobile view */
+@media (max-width: 768px) {
+  /* Remove widths in mobile view */
+  .form-control, 
+  .form1 {
+      width: 100% !important;
+  }
+  .form1{
+    margin-bottom: 5%;
+
+  }
+
+  /* Align Save Project button at the bottom on mobile */
+  .form1 .save-button-container {
+      text-align: center;
+      margin-top: 20px; /* Add margin for spacing */
+      width: 100%;
+  }
+
+  /* Centering the Save button */
+  .form1 .btn {
+      width: 100%; /* Full width for the button */
+  }
+  .status{
+    margin-left: 57% !important;
+  }
+  .back-button{
+    display: none;
+  }
+  .header{
+    margin-top: -9%;
+
+  }
+}

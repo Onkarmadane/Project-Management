@@ -1,0 +1,116 @@
+
+/* General Styles */
+.form-container {
+    margin: 0% 0% 0% 3%;
+    background-image: url('../../imgs/Header-bg.svg');
+    background-repeat: no-repeat;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.back-button {
+    background: none;
+    border: none;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.table {
+    width: 100%;
+}
+
+/* Card-style view for mobile */
+@media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    
+    thead {
+        display: none; /* Hide table headers on mobile */
+    }
+
+    tbody tr {
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        background-color: white;
+    }
+
+    tbody tr td {
+        display: block;
+        text-align: left;
+        font-size: 0.9em;
+        padding: 8px 10px;
+        border-bottom: 1px solid #ddd;
+        position: relative;
+    }
+
+    tbody tr td:last-child {
+        border-bottom: none;
+    }
+
+    tbody tr td:before {
+        content: attr(data-label); /* Use the attribute to create labels */
+        font-weight: bold;
+        text-align: left;
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    .subtext {
+        display: block;
+        font-size: 0.8em;
+        color: #6c757d;
+    }
+
+    /* Style the action buttons to align horizontally */
+    .action-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .action-buttons button {
+        width: 30%;
+    }
+    .card1{
+        outline: none !important;
+        background: transparent !important;
+        background-color: none !important;
+    }
+    .logo-container{
+        display: none !important;
+    }
+    
+  .header-title {
+    font-size: 20px;
+    margin-top: -20%;
+    text-align: left !important;
+  }
+  .back-button{
+    display: none;
+  }
+  .form-container{
+    margin: none !important;
+  }
+  .card1{
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+
+}

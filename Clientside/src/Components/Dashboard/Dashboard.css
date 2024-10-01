@@ -1,0 +1,126 @@
+.dashboard-page {
+  background-image: url('../../imgs/Header-bg.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 0% 0% 0% 3%;
+  
+}
+
+.dashboard {
+  text-align: left !important;
+  font-size: 25px;
+  top: 0;
+}
+
+.dashtitle {
+  font-size: 35px;
+ 
+}
+
+.dash-dock {
+  /* border-radius: 20px;  */
+  border-left: 5px solid #0CC9E8 !important;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.card{
+  height: 110px !important;
+  text-align: left;
+  margin: 20px;
+  /* border-radius: 20px;  */
+  outline: none;
+}
+/* Styles for card group */
+.card-dock {
+  display: flex;
+  flex-wrap: nowrap; /* Ensure cards don't wrap */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  padding: 10px;
+  gap: 10px;
+}
+
+.card {
+  flex: 0 0 200px; /* Fixed width for each card */
+  min-width: 200px; /* Ensures space to scroll */
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 15px;
+}
+
+
+.card-body {
+  text-align: left;
+}
+
+.dash-dock {
+  border-left: 5px solid #0CC9E8;
+  padding-left: 10px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #6c757d;
+}
+.card-dock {
+  margin-bottom: 60px;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+}
+
+.logo-container {
+  flex: 1;
+  text-align: center;
+}
+
+.logout-icon-container {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.logout-icon {
+  width: 24px;
+  height: 24px;
+  fill: white !important; /* Adjust as per your design */
+}
+
+/* Mobile-specific styling */
+@media (max-width: 768px) {
+  .card-dock  {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    overflow-x: scroll;
+  }
+  
+  .card {
+    flex: 0 0 80%;
+    min-width: 80%;
+    margin-right: 10px;
+  }
+  
+  .card-dock::-webkit-scrollbar {
+    display: none; /* Hide scrollbar on mobile */
+  }
+  .Dashtext{
+    margin-top: -15px !important;
+  }
+  .logout-icon-container {
+    display: block; /* Display it only on mobile */
+}
+}
+
+
+
